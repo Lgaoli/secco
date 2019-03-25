@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/reg.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/reg.js"></script>
+    <script src="../js/jquery.idcode.js"></script>
+
+</head>
+
+<body>
+    <div id="secoo-reg ">
+        <div class="header ">
+            <div class="content">
+                <div class="logo"><img src="../img/logo.png"></div>
+                <div class="header-r">
+                    <ul>
+                        <li>寺库首页</li>
+                        <li>收藏寺库</li>
+                        <li>寺库APP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content clearfix">
+                <div class="main-bg"></div>
+                <div class="main-reg">
+                    <ul>
+                        <li>
+                            <span>用户名</span>
+                            <span class="user-error">请输入手机号或者邮箱</span>
+                            <div>
+
+                                <input type="text" id="username">
+                            </div>
+
+                        </li>
+                        <li class="yz">
+                            <span>验证码</span>
+
+                            <div>
+
+                                <input type="text" id="verif">
+                                <span id="idcode"></span>
+                            </div>
+
+                            <div>
+
+                                <input type="text" id="verif1">
+                                <input type="button" id="yzbtn" value="获取验证码" onclick="sendemail()" />
+
+                            </div>
+                        </li>
+                        <li>
+                            <span>密码</span>
+                            <span class="error"></span>
+                            <div>
+                                <input type="password" id="password">
+
+                            </div>
+                        </li>
+                        <li><span>确认密码</span>
+                            <span class="error1"></span>
+                            <div>
+
+                                <input type="password" id="password1">
+                            </div>
+                        </li>
+                        <div class="reg-box">
+                            <input type="checkbox" name="" id="che"><span>贵宾邀请码</span>
+                            <input type="text" id="vip" style="display:none">
+                            <div class="reg-btn">
+                                立即注册
+
+                            </div>
+                        </div>
+                    </ul>
+                    <p class="check" style=""> <input type="checkbox" name="" id="" checked="checkbox"><span>我已阅读并同意《寺库网用户注册协议》</span></p>
+                    <div class="lo-c">
+                            已经是寺库会员？ <a class="login">立即登录</a>
+
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="content">
+                <ul class="nfooter-list">
+                    <li>
+                        <a href="http://www.secoo.com/static/help/1_1.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','新手指南')">新手指南</a><br>
+                        <a href="http://www.secoo.com/static/help/2_2.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','付款方式')">付款方式</a><br>
+                        <a href="http://www.secoo.com/static/help/3_1.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','物流配送')">物流配送</a><br>
+                        <a href="http://www.secoo.com/static/help/4_1.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','售后服务')">售后服务</a>
+                    </li>
+                    <li>
+                        <a href="http://weibo.com/sikuchina" target="_blank" rel="nofollow" onclick="analytical('首页底部','寺库微博')">寺库微博</a><br>
+                        <a href="http://www.secoo.com/friendlink.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','友情链接')">友情链接</a><br>
+                        <a href="http://www.secoo.com/topic/" target="_blank" rel="nofollow" onclick="analytical('首页底部','奢侈品热词')">奢侈品热词</a><br>
+                        <!-- <a href="http://www.secoo.com/news.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','奢侈品资讯')">奢侈品资讯</a> -->
+                    </li>
+                    <li>
+                        <a href="http://www.secoo.com/static/help/10_7.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','加入寺库')">加入寺库</a><br>
+                        <a href="http://www.secoo.com/static/help/11_2.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','联系我们')">联系我们</a><br>
+                        <a href="http://www.secoo.com/static/help/10_1.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','关于寺库')">关于寺库</a><br>
+                        <a href="http://www.secoo.com/static/help/1_1.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','帮助中心')">帮助中心</a>
+                    </li>
+                    <li>
+                        <a href="http://www.secoo.com/yhindex.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','寺库奢侈品养护')">寺库奢侈品养护</a><br>
+                        <a href="http://www.secoo.com/shopindex.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','寺库招商')">寺库招商</a><br>
+                        <a href="http://www.secoo.com/listTop/sikudao.shtml" target="_blank" rel="nofollow" onclick="analytical('首页底部','寺库加盟店')">寺库加盟店</a>
+                    </li>
+                </ul>
+                <div class="nfooter-info">
+                    <p>
+                        <span>统一社会信用代码：91110102689248179K</span>
+                        <span><a href="" target="_blank"><img src="../img/pcfooterbatb.png">京公安备11010102001392</a></span>
+                        <span>京ICP证110119号 京ICP备09084709号-3</span>
+                        <span>ISO9001中国质量管理体系认证</span>
+                    </p>
+                    <p>COPYRIGHT © 2010-2017 北京寺库商贸有限公司 版权所有</p>
+                    <p class="nfooter-info-imgs">
+                        <a href="">
+                            <img class="lazyImg" src="../img/f_01.jpg" style="display: inline;">
+                        </a>
+                        <a href="">
+                            <img class="lazyImg" src="../img/f_04.jpg" alt="诚信经营示范企业" style="display: inline;">
+                        </a>
+                        <a href="javascript:;">
+                            <img class="lazyImg" src="../img/cnnic.png" style="display: inline;">
+                        </a>
+                        <a href="" target="_blank">
+                            <img class="lazyImg" src="../img/kexin.jpg" alt="诚信网站" style="display: inline;">
+                        </a>
+                        <a href="">
+                            <img class="lazyImg" src="../img/f_03.jpg" alt="东城区网络警察" style="display: inline;">
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        //倒计时
+        var countdown = 60;
+
+        function sendemail() {
+            var obj = $("#yzbtn");
+            settime(obj);
+
+        }
+
+        function settime(obj) { //发送验证码倒计时
+            if (countdown == 0) {
+                obj.attr('disabled', false);
+                //obj.removeattr("disabled"); 
+
+                countdown = 60;
+                return;
+            } else {
+                obj.attr('disabled', true);
+                obj.val("重新发送(" + countdown + ")");
+                countdown--;
+            }
+            setTimeout(function () {
+                settime(obj)
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html>

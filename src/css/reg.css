@@ -1,0 +1,165 @@
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
+body {
+  height: 100%;
+  overflow-x: hidden; }
+
+.header {
+  height: 70px;
+  background: #31302f; }
+  .header .logo {
+    float: left;
+    margin-left: -5px; }
+  .header .header-r {
+    float: right;
+    font-size: 12px;
+    color: #999999; }
+    .header .header-r li {
+      float: left;
+      margin-top: 28px;
+      margin-left: 24px;
+      cursor: pointer; }
+    .header .header-r li:hover {
+      color: #c69c6d; }
+
+.main {
+  padding: 30px 0;
+  background-color: #fdf8f4;
+  position: relative; }
+  .main .main-bg {
+    height: 720px;
+    background: url(../img/login_03.jpg) no-repeat 10px -92px; }
+  .main .main-reg {
+    width: 381px;
+    background: #ffffff;
+    position: absolute;
+    top: 118px;
+    right: 0px; }
+    .main .main-reg .check {
+      margin-left: 30px;
+      margin-top: -20px;
+      font-size: 12px;
+      padding-bottom: 10px;
+      color: #999; }
+    .main .main-reg .lo-c {
+      margin-left: 34px;
+      padding-bottom: 20px;
+      font-size: 12px; }
+      .main .main-reg .lo-c a {
+        color: #f19108; }
+      .main .main-reg .lo-c .login {
+        cursor: pointer; }
+      .main .main-reg .lo-c .for {
+        float: right;
+        margin-right: 36px;
+        color: #999; }
+    .main .main-reg li {
+      margin-top: 30px; }
+      .main .main-reg li .user-error {
+        float: right;
+        margin-right: 36px; }
+      .main .main-reg li span {
+        margin-left: 34px;
+        font-size: 12px;
+        color: #999999; }
+      .main .main-reg li p {
+        display: inline-block;
+        font-size: 14px;
+        color: #999; }
+      .main .main-reg li input {
+        border: 1px solid #dedede;
+        width: 310px;
+        height: 42px;
+        margin-left: 34px;
+        transition: all .6s; }
+      .main .main-reg li .aci {
+        box-shadow: #ffad77 0px 0px 3px 1px; }
+    .main .main-reg .yz {
+      display: none; }
+      .main .main-reg .yz #verif {
+        width: 115px;
+        margin-bottom: 10px; }
+      .main .main-reg .yz #idcode {
+        display: block;
+        position: relative; }
+        .main .main-reg .yz #idcode #ehong-code {
+          text-align: center;
+          line-height: 42px;
+          position: absolute;
+          left: 137px;
+          top: -54px;
+          width: 50px;
+          height: 42px;
+          border: #999 1px solid; }
+        .main .main-reg .yz #idcode #ehong-code-tip-ck {
+          left: 145px;
+          top: -54px;
+          cursor: pointer;
+          line-height: 42px;
+          position: absolute;
+          margin-left: 50px; }
+      .main .main-reg .yz #verif1 {
+        width: 115px; }
+      .main .main-reg .yz #yzbtn {
+        font-size: 13px;
+        width: 115px;
+        height: 20px; }
+    .main .main-reg .reg-box {
+      margin-top: 10px;
+      margin-left: 34px;
+      padding-bottom: 30px; }
+      .main .main-reg .reg-box span {
+        font-size: 12px;
+        color: #999; }
+      .main .main-reg .reg-box #che {
+        margin-top: 1px; }
+      .main .main-reg .reg-box #vip {
+        border: 1px solid #dedede;
+        width: 310px;
+        height: 42px;
+        margin-top: 5px; }
+      .main .main-reg .reg-box .reg-btn {
+        margin-top: 10px;
+        width: 310px;
+        height: 42px;
+        background-color: #f19108;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        line-height: 42px;
+        color: #fff; }
+
+.footer {
+  overflow: hidden;
+  padding: 124px 0;
+  background: #f6f6f6; }
+  .footer .content .nfooter-list {
+    padding: 10px;
+    float: left; }
+    .footer .content .nfooter-list li {
+      float: left;
+      width: 236px;
+      font-size: 14px;
+      line-height: 30px; }
+      .footer .content .nfooter-list li a {
+        color: #31302f; }
+    .footer .content .nfooter-list li a:hover {
+      color: #c69c6d; }
+  .footer .content .nfooter-info {
+    float: left;
+    margin-top: 25px;
+    line-height: 36px;
+    font-size: 14px; }
+    .footer .content .nfooter-info span {
+      margin-right: 20px; }
+    .footer .content .nfooter-info .nfooter-info-imgs {
+      margin-top: 8px; }
+      .footer .content .nfooter-info .nfooter-info-imgs img {
+        width: 108px;
+        height: 40px;
+        margin-right: 10px; }
+
+/*# sourceMappingURL=reg.css.map */
